@@ -1,0 +1,35 @@
+### Get User Information
+GET http://localhost:3000/api/v1/app/requist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTI1MDYyNzliZWMwZjQ1N2U4OWFlYyIsImlhdCI6MTczNzgxNjExOCwiZXhwIjoxNzM3ODE2Mjk4fQ.uvfobkd32xoWnrb70P2zl4Ikp68y0eVvxmddl9VSvk4
+
+### anthor requist
+GET http://localhost:3000/api/v1/app/requist2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTI1MDYyNzliZWMwZjQ1N2U4OWFlYyIsImlhdCI6MTczNzgxNjExOCwiZXhwIjoxNzM3ODE2Mjk4fQ.uvfobkd32xoWnrb70P2zl4Ikp68y0eVvxmddl9VSvk4
+
+### refresh token
+POST http://localhost:3000/api/v1/app/refresh-token
+Content-Type: application/json
+
+{
+   "refreshToken" :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTI1MDYyNzliZWMwZjQ1N2U4OWFlYyIsImlhdCI6MTczNzczMDY2N30.GaAZRWgX8hRr1ZsS9Q9iGeg08cw9GD-1Ovo-qocJuvg"
+
+}
+### Create a New User
+POST http://localhost:3000/api/v1/app/signin
+Content-Type: application/json
+
+{
+    "username": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "yourpassword"
+}
+
+### User login 
+POST http://localhost:3000/api/v1/app/login
+Content-Type: application/json
+
+{
+    
+    "email": "john.doe@example.com",
+    "password": "yourpassword"
+}
